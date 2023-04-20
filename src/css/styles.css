@@ -369,20 +369,194 @@ section{
     color: gray;
 }
 
-.footer .socials a {
-    font-size: 2.5rem;
-    color: var(--black);
+.footer .socials a{
+    font-size: 2.0rem;
+    /* color: var(--black);
+    background: var(--light-bg);
+    border-radius: 50%; 
+    padding: 1.0rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    text-decoration: none; */
+    /* font-size: 18px; */
+    display: inline-block;
+    background: var(--light-bg);
+    color:var(--black);
+    line-height:1;
+    padding: 8px 0px;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align:center;
+    width: 36px;
+    height:36px;
+    transition: 0.3s;
+}
+
+/* .footer .socials a i{
     background: var(--light-bg);
     border-radius: 50%;
     padding: 1rem;
     margin: 0.5rem;
-    cursor: pointer;
-    text-decoration: none;
-}
+} */
 
 /* using the bth-child method to target the first child in my social media section */
 .footer .socials a:nth-child(1){
     color: var(--google-color);
 }
 
+.footer .socials a:nth-child(1):hover {
+    color: var(--white);
+    background: var(--google-color);
+}
+
+.footer .socials a:nth-child(2){
+    
+    color: var(--twitter-color);
+}
+
+.footer .socials a:nth-child(2):hover {
+    background: var(--twitter-color);
+    color: var(--white);
+}
+
+.footer .socials a:nth-child(3){
+    color: var(--youtube-color);
+}
+
+.footer .socials a:nth-child(3):hover {
+    color: var(--white);
+    background: var(--youtube-color);
+   
+}
+
+.footer .socials a:nth-child(4){
+    color: var(--linkedin-color);
+}
+
+.footer .socials a:nth-child(4):hover {
+    background: var(--linkedin-color);
+    color: var(--white);
+}
+
+
+
+.footer-bottom {
+    background-color: var(--black);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+
+.copyright-link {
+    display: inline-block;
+    /* text-decoration: underline; */
+    color: var(--white);
+}
+
+.copyright-link:is(:hover, :focus) {
+    text-decoration: none;
+    color: var(--white);
+}
+
 /* footer section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Website Responsiveness starts */
+
+    /* media querries */
+@media (max-width: 1200px){
+    .header{
+        padding: 2rem;
+    }
+
+    .header.active{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+    .home h1{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 991px){
+    /* reducing the base font size */
+    html{
+        font-size: 60%;
+    }
+
+    /* .contact .box-container .box{
+         display: grid;
+        grid-template-columns: 1fr; 
+        width: 100%;
+    } */
+}
+
+@media (max-width: 768px){
+    .header .menu{
+        display: block;
+    }
+
+    .header .navbar{
+        position: fixed;
+        top: 6.4rem;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+
+        /* making our navbars dissapear for smaller screens */
+        transform: translateX(100%);
+    }
+    
+    .header .navbar a{
+        color: var(--black);
+        margin: 0;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* Website Responsiveness ends */
