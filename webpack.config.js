@@ -39,7 +39,7 @@ module.exports = {
       outputReport: false
     }),
     new HtmlWebpackPlugin({
-      title: 'Yay Crypto Stock App',
+      title: 'Haltternet Agency',
       template: './src/index.html',
       inject: 'body'
     }),
