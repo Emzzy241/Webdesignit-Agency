@@ -113,6 +113,17 @@ function clearSearchFields() {
 
 $(document).ready(function () {
 
+    
+
+    // for the buttons responsiveness
+    const navbar = $(".header .navbar");
+    const menuButton = $(".header .menu");
+
+    menuButton.click(()=>{
+        navbar.classList.toggle()
+    })
+
+
     // using vanilla and jQuery to make an awesome navigation
 
     let myOfferImage = $("img.offer");
@@ -240,12 +251,13 @@ $(document).ready(function () {
 
     // the .no-nav class was created in css file for making the navbar invisible
 
-    $(".navbar").addClass("no-nav");
+    // $(".navbar").addClass("no-nav");
 
-    // for opening and closing the navbar in small screen sizes
-    $("#menu-bars").click(() => {
-        $(".navbar").toggleClass("no-nav");
-    });
+    // // for opening and closing the navbar in small screen sizes
+    // $("#menu-bars").click(() => {
+    //     $(".navbar").toggleClass("no-nav");
+    // });
+
 
 
 
