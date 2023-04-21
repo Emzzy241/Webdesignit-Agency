@@ -5,7 +5,45 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 // importing my  CryptoService class
-import { CryptoService, SearchFeature } from "./agency-service.js";
+// import { CryptoService, SearchFeature } from "./agency-service.js";
+
+
+    // // for the buttons responsiveness
+    // const navbar = document.querySelector(".navbar");
+    // const menuButton = document.querySelector(".menu");
+
+    // menuButton.addEventListener("click", ()=>{
+    //     navbar.classList.toggle("show");
+    //     menuButton.classList.add("fa-solid fa-x");
+    // });
+    
+    
+        // using vanilla and jQuery to make an awesome navigation
+    
+    
+        document.onscroll = () => {
+            if (window.scrollY > 0) {
+                $(".header").addClass("active");
+                // document.querySelector(".header").classList.add("active");
+            }
+            else {
+                // document.querySelector(".header").classList.remove("active");
+                $(".header").removeClass("active");
+            }
+        }
+    
+        document.onload = () => {
+            if (window.scrollY > 0) {
+                $(".header").addClass("active");
+                // document.querySelector(".header").classList.add("active");
+            }
+            else {
+                // document.querySelector(".header").classList.remove("active");
+                $(".header").removeClass("active");
+            }
+        }
+
+
 
 
 // import Swiper bundle with all modules installed -- I didn't use it here but I might be using it later on for other pages in the website
@@ -113,44 +151,20 @@ function clearSearchFields() {
 
 $(document).ready(function () {
 
+
+    // the .no-nav class was created in css file for making the navbar invisible
+
+    $(".navbar").addClass("no-nav");
+
+    // for opening and closing the navbar in small screen sizes
+    $("#menu-bars").click(() => {
+        $(".navbar").toggleClass("no-nav");
+    });
+
     
 
-    // for the buttons responsiveness
-    const navbar = $(".header .navbar");
-    const menuButton = $(".header .menu");
-
-    menuButton.click(()=>{
-        navbar.classList.toggle()
-    })
-
-
-    // using vanilla and jQuery to make an awesome navigation
-
-    let myOfferImage = $("img.offer");
-    myOfferImage.attr("src", myOfferImg);
-
-    document.onscroll = () => {
-        if (window.scrollY > 0) {
-            $(".header").addClass("active");
-            // document.querySelector(".header").classList.add("active");
-        }
-        else {
-            // document.querySelector(".header").classList.remove("active");
-            $(".header").removeClass("active");
-        }
-    }
-
-    document.onload = () => {
-        if (window.scrollY > 0) {
-            $(".header").addClass("active");
-            // document.querySelector(".header").classList.add("active");
-        }
-        else {
-            // document.querySelector(".header").classList.remove("active");
-            $(".header").removeClass("active");
-        }
-    }
-
+        let myOfferImage = $("img.offer");
+        myOfferImage.attr("src", myOfferImg);
 
 
 

@@ -527,7 +527,7 @@ section{
 
 @media (max-width: 768px){
     .header .menu{
-        display: block;
+        display: inline-block;
     }
 
     .header .navbar{
@@ -550,6 +550,13 @@ section{
         font-size: 2rem;
         margin: 2rem 0;
     }
+
+    .no-nav {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    /* using clip-path here to make the navbar disappear and later on in JavaScript I make it reappear when the menu-bar div id is clicked */
+
 }
 
 
