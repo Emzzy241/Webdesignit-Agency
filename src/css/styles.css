@@ -31,7 +31,9 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
+    /* margin: 0%; */
 }
+
 
 section{
     padding: 5rem 9%;
@@ -44,6 +46,7 @@ section{
     border: 0.1rem solid var(--white);
     border-radius: 10rem;
     padding: 1.5rem 4rem;
+    display: flex;
 }
 
 .btn:hover{
@@ -95,6 +98,105 @@ section{
 
 /* header section starts */
 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+
+header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .logo i {
+    color: var(--green);
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+/* giving properties to two html activities; the first is active and the second is hover */
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    background: var(--black);
+
+}
+
+
+header .icons #twitter-icon{
+    color: var(--twitter-color);
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 2.0rem;
+    line-height: 4.5rem;
+    width: 3rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header .icons #youtube-icon{
+    color: var(--youtube-color);
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 2.0rem;
+    line-height: 4.5rem;
+    width: 3rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header .icons #menu-bars {
+    color: var(--black);
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 2.0rem;
+    line-height: 4.5rem;
+    width: 3rem;
+    text-align: center;
+}
+
+
+header .icons #twitter-icon:hover,
+header .icons #youtube-icon:hover,
+header .icons #menu-bars:hover {
+    color: var(--black);
+}
+
+
+header .icons #menu-bars {
+    display: none;
+}
+
+
+
+
+
+.nav .nav-brand a span{
+    font-weight: normal;
+}
+
+
+
+/* 
 .header{
     position: fixed;
     top: 0;
@@ -130,6 +232,14 @@ section{
     font-weight: normal;
 }
 
+.header .navbar{
+    height: 0rem;
+    min-height: 5vh;
+    overflow: hidden;
+    padding: 0.2rem;
+    transition: height 1s ease-in-out;
+}
+
 .header .navbar a{
     font-size: 1.7rem;
     color: var(--white);
@@ -138,9 +248,14 @@ section{
 }
 
 .header .menu{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--white);
     display: none;
+}
+ */
+
+.collapse{
+    height: 30rem;
 }
 
 /* header section ends */
@@ -495,13 +610,13 @@ section{
 
     /* media querries */
 @media (max-width: 1200px){
-    .header{
+    /* .header{
         padding: 2rem;
     }
 
     .header.active{
         padding: 2rem;
-    }
+    } */
 
     section{
         padding: 3rem 2rem;
@@ -526,10 +641,43 @@ section{
 }
 
 @media (max-width: 768px){
-    .header .menu{
+
+    header .icons #menu-bars {
         display: inline-block;
     }
 
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+
+    }
+
+    .no-nav {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    /* using clip-path here to make the navbar disappear and later on in JavaScript I make it reappear when the menu-bar div id is clicked */
+
+    header .navbar a {
+        width: 100%;
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+
+    /* .header .menu{
+        display: inline-block;
+    } */
+/* 
     .header .navbar{
         position: fixed;
         top: 6.4rem;
@@ -540,7 +688,7 @@ section{
         flex-flow: column;
         text-align: center;
 
-        /* making our navbars dissapear for smaller screens */
+        /* making our navbars dissapear for smaller screens 
         transform: translateX(100%);
     }
     
@@ -550,10 +698,7 @@ section{
         font-size: 2rem;
         margin: 2rem 0;
     }
-
-    .no-nav {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
+ */
 
     /* using clip-path here to make the navbar disappear and later on in JavaScript I make it reappear when the menu-bar div id is clicked */
 
@@ -564,6 +709,25 @@ section{
     html{
         font-size: 55%;
     }
+
+    header .icons #search-icon,
+    header .icons .fa-heart,
+    header .icons #menu-bars {
+
+        font-size: 1.1rem;
+        color: var(--black);
+
+    }
 }
 
 /* Website Responsiveness ends */
+
+
+@media only screen and (max-width: 750px){
+    /* .header .menu{
+        display: initial;
+    }
+    .header .navbar{
+        flex-direction: column;
+    } */
+}
