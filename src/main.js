@@ -109,26 +109,32 @@ import companyStock from "./assets/images/msftStock.jpg";
 import msftImage from "./assets/images/msft2.png";
 
 
-import appleImage from "./assets/images/apple.png";
 import eth from "./assets/images/eth.svg";
 import bnc from "./assets/images/bnc.png";
 
 // using all images above
 
 import secureCrypto from "./assets/images/secure.png";
-import spImage from "./assets/images/sp.svg";
+import agencyLogo from "./assets/images/agencyLogo2.png";
+import agencyLogo2 from "./assets/images/agencyLogo1.png";
 import excImage from "./assets/images/exchange.png";
 import stkExchange from "./assets/images/stExchange.svg";
-import course from "./assets/images/course.png";
 import bot from "./assets/images/bot2.svg";
-import wallet from "./assets/images/wallet.png";
 import pcOne from "./assets/images/pic-1.png";
 import pcTwo from "./assets/images/pic-2.png";
 import pcThree from "./assets/images/pic-3.png";
 import pcFour from "./assets/images/pic-4.png";
 import tethImg from "./assets/images/teth.png";
-import doge from "./assets/images/dg.svg";
-import ripple from "./assets/images/ripp.png";
+
+
+import feedNaijaImg from "./assets/images/FeedNaija.png";
+import MworthImg from "./assets/images/Mworth.png";
+import InfluenceImg from "./assets/images/Influence.png";
+import cryptoImg from "./assets/images/Crypto.png";
+import JshoesImg from "./assets/images/Jshoes.png";
+import ChurchImg from "./assets/images/Church.png";
+
+
 import jsBadgeImg from "./assets/images/js-badge.svg";
 
 
@@ -153,6 +159,10 @@ $(document).ready(function () {
 
 
     // the .no-nav class was created in css file for making the navbar invisible
+    // working with sites responsiveness
+
+
+    // the .no-nav class was created in css file for making the navbar invisible
 
     $(".navbar").addClass("no-nav");
 
@@ -160,12 +170,6 @@ $(document).ready(function () {
     $("#menu-bars").click(() => {
         $(".navbar").toggleClass("no-nav");
     });
-
-    
-
-        let myOfferImage = $("img.offer");
-        myOfferImage.attr("src", myOfferImg);
-
 
 
 
@@ -179,30 +183,30 @@ $(document).ready(function () {
     // myTeslaStock.attr("src", teslaStock);
 
     // using images below
-    let myMsStock = $(".agencyAbout");
+    let myAgency = $(".agencyAbout");
     // change image and image import name
-    myMsStock.attr("src", companyStock);
+    myAgency.attr("src", agencyLogo);
 
 
     let service1 = $(".service1");
-    service1.attr("src", bnc);
+    service1.attr("src", MworthImg);
 
 
     let service2 = $(".service2");
-    service2.attr("src", eth);
+    service2.attr("src", JshoesImg);
 
     let service3 = $(".service3");
-    service3.attr("src", teslaStock);
+    service3.attr("src", ChurchImg);
 
     
     let service4 = $(".service4");
-    service4.attr("src", ripple);
+    service4.attr("src", feedNaijaImg);
     
     let service5 = $(".service5");
-    service5.attr("src", secureCrypto);
+    service5.attr("src", InfluenceImg);
     
     let service6 = $(".service6");
-    service6.attr("src", bot);
+    service6.attr("src", cryptoImg);
 
 
     // let tslaImg = $(".dgCoin");
@@ -255,7 +259,7 @@ $(document).ready(function () {
 
     // for the top image in app
     let topImg = $(".appImg");
-    topImg.attr("href", jsBadgeImg);
+    topImg.attr("href", agencyLogo2);
 
 
 
