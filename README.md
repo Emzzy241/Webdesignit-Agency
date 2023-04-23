@@ -1,4 +1,4 @@
-# Haltternet Digital Agency
+# Webdesignit Digital Agency
 #### made by Mojiboye Emmanuel
 
 #### An Agency website made for a Design Agency
@@ -11,7 +11,7 @@
 * webpack
 
 ## Description
-_This is an application where its users can get first hand info's about the Agency's Products and services. You also get frequent updates pertaining the Agency._
+_The website for my web agency. In this website; you get to know a lot of things about the company, its structure and its past projects._
 
 ## Setup/Installation
 * First clone the project on your System(git clone _REPOSITORY-NAME_)
