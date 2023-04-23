@@ -195,65 +195,6 @@ header .icons #menu-bars {
 }
 
 
-
-/* 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 5rem 9%;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-}
-
-.header.active{
-    background: var(--white);
-    padding: 3rem 9%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.header.active .logo,
-.header.active .navbar a,
-.header.active .menu{
-    color: var(--black);
-}
-
-.header .logo{
-    margin-right: auto;
-    font-size: 2rem;
-    color: var(--white);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.header .logo span{
-    font-weight: normal;
-}
-
-.header .navbar{
-    height: 0rem;
-    min-height: 5vh;
-    overflow: hidden;
-    padding: 0.2rem;
-    transition: height 1s ease-in-out;
-}
-
-.header .navbar a{
-    font-size: 1.7rem;
-    color: var(--white);
-    margin-left: 3rem;
-    text-decoration: none;
-}
-
-.header .menu{
-    font-size: 1.6rem;
-    color: var(--white);
-    display: none;
-}
- */
-
 .collapse{
     height: 30rem;
 }
@@ -336,9 +277,9 @@ header .icons #menu-bars {
 }
 
 /* WORKING WITH THIS IMAGE ONLY IF THE 6 IMAGES ARE BLACK */
-/* .services .box-container .box:hover img{
+.services .box-container .box:hover img{
     filter: invert(100%);
-} */
+}
 
 /* services section ends */
 
@@ -564,6 +505,10 @@ header .icons #menu-bars {
 }
 
 
+.copyright-link a:hover{
+    text-decoration: underline;
+}
+
 .copyright-link {
     display: inline-block;
     /* text-decoration: underline; */
@@ -702,6 +647,10 @@ header .icons #menu-bars {
 
     /* using clip-path here to make the navbar disappear and later on in JavaScript I make it reappear when the menu-bar div id is clicked */
 
+    .contact .box-container{
+        display: block;
+    }
+
 }
 
 
@@ -722,12 +671,3 @@ header .icons #menu-bars {
 
 /* Website Responsiveness ends */
 
-
-@media only screen and (max-width: 750px){
-    /* .header .menu{
-        display: initial;
-    }
-    .header .navbar{
-        flex-direction: column;
-    } */
-}
