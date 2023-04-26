@@ -35,11 +35,11 @@ html {
 }
 
 
-section{
+section {
     padding: 5rem 9%;
 }
 
-.btn{
+.btn {
     color: var(--white);
     font-weight: 400;
     font-size: 1.7rem;
@@ -49,12 +49,12 @@ section{
     display: flex;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--black);
     color: var(--white);
 }
 
-.heading{
+.heading {
     font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 5rem;
@@ -142,7 +142,7 @@ header .navbar a:hover {
 }
 
 
-header .icons #twitter-icon{
+header .icons #twitter-icon {
     color: var(--twitter-color);
     cursor: pointer;
     margin-left: 0.5rem;
@@ -153,7 +153,7 @@ header .icons #twitter-icon{
     font-size: 1.7rem;
 }
 
-header .icons #youtube-icon{
+header .icons #youtube-icon {
     color: var(--youtube-color);
     cursor: pointer;
     margin-left: 0.5rem;
@@ -190,12 +190,12 @@ header .icons #menu-bars {
 
 
 
-.nav .nav-brand a span{
+.nav .nav-brand a span {
     font-weight: normal;
 }
 
 
-.collapse{
+.collapse {
     height: 30rem;
 }
 
@@ -203,23 +203,23 @@ header .icons #menu-bars {
 
 /* about section starts */
 
-.about .box-container .box .image{
+.about .box-container .box .image {
     height: 40rem;
 }
 
-.about .box-container .box .image img{
+.about .box-container .box .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}   
+}
 
-.about .box-container{
+.about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
 }
 
-.about .box-container .box p{
+.about .box-container .box p {
     font-size: 1.7rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
@@ -232,64 +232,64 @@ header .icons #menu-bars {
 
 /* services section starts */
 
-.services{
+.services {
     background: var(--light-bg);
 }
 
-.services .box-container{
+.services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 5rem;
 }
 
-.services .box-container .box{
+.services .box-container .box {
     background: var(--white);
     text-align: center;
     border-radius: 1rem;
     padding: 3rem;
 }
 
-.services .box-container .box img{
+.services .box-container .box img {
     margin-bottom: 2rem;
     margin-left: -12.5px;
     /* If you are ABLE TO GET HIS PICTURES.... REMOVE THIS IMAGE HEIGHT */
     height: 140px;
 }
 
-.services .box-container .box h3{
+.services .box-container .box h3 {
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-.services .box-container .box p{
+.services .box-container .box p {
     font-size: 1.5rem;
     line-height: 2;
     color: var(--light-color);
 }
 
-.services .box-container .box:hover{
+.services .box-container .box:hover {
     background: var(--black);
 }
 
 .services .box-container .box:hover h3,
-.services .box-container .box:hover p{
+.services .box-container .box:hover p {
     color: var(--white);
 }
 
 /* WORKING WITH THIS IMAGE ONLY IF THE 6 IMAGES ARE BLACK */
-.services .box-container .box:hover img{
+.services .box-container .box:hover img {
     filter: invert(100%);
 }
 
 /* services section ends */
 
-.works .box-container .box .image{
+.works .box-container .box .image {
     height: 30rem;
     position: relative;
     overflow: hidden;
 }
 
-.works .box-container .box .image img{
+.works .box-container .box .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -301,7 +301,7 @@ header .icons #menu-bars {
     gap: 5rem;
 }
 
-.works .box-container .box .image .content{
+.works .box-container .box .image .content {
     position: absolute;
     left: 0;
     right: 0;
@@ -315,7 +315,7 @@ header .icons #menu-bars {
     transform: translateY(100%);
 }
 
-.works .box-container .box:hover .image .content{
+.works .box-container .box:hover .image .content {
     /* when I hover over the box, the content inside it should come back and thats why we did translateY(0 */
     /* you can also try out translateX(100%) and it gives you a smooth hover effect horizontally */
     transform: translateY(0);
@@ -324,52 +324,211 @@ header .icons #menu-bars {
 /* services section ends */
 
 
+/* The pricing section starts */
+
+.container {
+    padding-inline: 15px;
+}
+
+.package .all-package .package-one,
+.package .all-package .package-two,
+.package .all-package .package-three {
+    width: 100%;
+}
+
+.package .all-package hr {
+    background: var(--white);
+
+}
+
+.package .more-packages hr {
+    background: var(--white);
+
+}
+
+.package .more-packages .extra {
+    width: 100%;
+}
+
+
+.package .more-packages {
+    display: inline-flex;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    gap: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.package .all-package {
+    display: inline-flex;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    gap: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+
+.package .more-package h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 28px;
+    /* color: #222; */
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.package .more-package p {
+    color: var(--white);
+    margin-left: 30px;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+.package .more-packages .extra {
+    border-radius: 12px;
+    box-shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+    background: var(--black);
+    outline: .1rem solid var(--white);
+    outline-offset: -1rem;
+    padding: 3rem 2rem;
+
+    margin-block-end: 60px;
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.package .all-package .package-one,
+.package .all-package .package-two,
+.package .all-package .package-three {
+    border-radius: 12px;
+    box-shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+    background: var(--black);
+    outline: .1rem solid var(--white);
+    outline-offset: -1rem;
+    padding: 3rem 2rem;
+
+    margin-block-end: 60px;
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.package .all-package h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 28px;
+    /* color: #222; */
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.package .all-package p {
+    color: var(--white);
+    margin-left: 30px;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+.package .more-packages h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 28px;
+    /* color: #222; */
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.package .more-packages p {
+    color: var(--white);
+    margin-left: 30px;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+
+
+.package a {
+    width: 57%;
+    align-items: center;
+}
+
+.package a:hover {
+    filter: invert(100%);
+}
+
+.package {
+    margin-top: 125px;
+    margin-block-end: 40px;
+}
+
+.more-packages a {
+    width: 37%;
+    align-items: center;
+}
+
+.more-packages a:hover {
+    filter: invert(100%);
+}
+
+.more-packages {
+    margin-top: 125px;
+    margin-block-end: 40px;
+}
+
+
+/* The mission section ends */
+
+
+
+
 /* contact section starts */
 /* using only flexbox for our contact screen and not grid like we did previously */
 
-.contact{
+.contact {
     background: var(--light-bg);
 }
 
-.contact .box-container{
+.contact .box-container {
     display: flex;
     /* using flex = wrap so if there is no space again on the x-axis for the other items; it comes down */
     flex: wrap;
     gap: 3rem;
 }
 
-.contact .box-container .box{
+.contact .box-container .box {
     width: 30rem;
 }
 
-.contact .box-container .box h3{
+.contact .box-container .box h3 {
     font-size: 1.7rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
-.contact .box-container .box p{
+.contact .box-container .box p {
     font-size: 1.5rem;
     color: var(--light-color);
     margin-bottom: 2rem;
 }
 
-.contact .box-container  form{
+.contact .box-container form {
     flex: 1 1 42rem;
 }
 
-.contact .box-container form .inputBox{
+.contact .box-container form .inputBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contact .box-container form .inputBox input{
+.contact .box-container form .inputBox input {
     width: 49%;
 }
 
 .contact .box-container form .inputBox input,
-.contact .box-container form textarea{
+.contact .box-container form textarea {
     border-radius: 5rem;
     padding: 1.2rem 1.8rem;
     font-size: 1.5rem;
@@ -377,7 +536,7 @@ header .icons #menu-bars {
     margin: 0.7rem 0;
 }
 
-.contact .box-container form textarea{
+.contact .box-container form textarea {
     width: 100%;
     border-radius: 1rem;
     resize: none;
@@ -385,14 +544,14 @@ header .icons #menu-bars {
 }
 
 /* the .btn is a reused style.... But it doesn't look great in my contact section and thus; I have to overwrite some styles I gave it earlier on */
-.contact .box-container form .btn{
+.contact .box-container form .btn {
     color: var(--black);
     background: var(--white);
     border: 0.1rem solid var(--black);
     margin-top: 1rem;
 }
 
-.contact .box-container form .btn:hover{
+.contact .box-container form .btn:hover {
     background: var(--black);
     color: var(--white);
 }
@@ -402,30 +561,30 @@ header .icons #menu-bars {
 
 /* footer section starts */
 
-.footer{
+.footer {
     text-align: center;
 }
 
-.footer .logo{
+.footer .logo {
     font-size: 2rem;
     color: var(--black);
     font-weight: 700;
     text-decoration: none;
 }
 
-.footer .logo span{
+.footer .logo span {
     font-weight: normal;
     text-decoration: none;
 }
 
-.footer p{
+.footer p {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 1.7rem;
     color: gray;
 }
 
-.footer .socials a{
+.footer .socials a {
     font-size: 2.0rem;
     /* color: var(--black);
     background: var(--light-bg);
@@ -437,14 +596,14 @@ header .icons #menu-bars {
     /* font-size: 18px; */
     display: inline-block;
     background: var(--light-bg);
-    color:var(--black);
-    line-height:1;
+    color: var(--black);
+    line-height: 1;
     padding: 8px 0px;
     margin-right: 4px;
     border-radius: 50%;
-    text-align:center;
+    text-align: center;
     width: 36px;
-    height:36px;
+    height: 36px;
     transition: 0.3s;
 }
 
@@ -456,7 +615,7 @@ header .icons #menu-bars {
 } */
 
 /* using the bth-child method to target the first child in my social media section */
-.footer .socials a:nth-child(1){
+.footer .socials a:nth-child(1) {
     color: var(--google-color);
 }
 
@@ -465,8 +624,8 @@ header .icons #menu-bars {
     background: var(--google-color);
 }
 
-.footer .socials a:nth-child(2){
-    
+.footer .socials a:nth-child(2) {
+
     color: var(--twitter-color);
 }
 
@@ -475,17 +634,17 @@ header .icons #menu-bars {
     color: var(--white);
 }
 
-.footer .socials a:nth-child(3){
+.footer .socials a:nth-child(3) {
     color: var(--youtube-color);
 }
 
 .footer .socials a:nth-child(3):hover {
     color: var(--white);
     background: var(--youtube-color);
-   
+
 }
 
-.footer .socials a:nth-child(4){
+.footer .socials a:nth-child(4) {
     color: var(--linkedin-color);
 }
 
@@ -505,7 +664,7 @@ header .icons #menu-bars {
 }
 
 
-.copyright-link a:hover{
+.copyright-link a:hover {
     text-decoration: underline;
 }
 
@@ -553,8 +712,8 @@ header .icons #menu-bars {
 
 /* Website Responsiveness starts */
 
-    /* media querries */
-@media (max-width: 1200px){
+/* media querries */
+@media (max-width: 1200px) {
     /* .header{
         padding: 2rem;
     }
@@ -563,18 +722,25 @@ header .icons #menu-bars {
         padding: 2rem;
     } */
 
-    section{
+    section {
         padding: 3rem 2rem;
     }
 
-    .home h1{
+    .home h1 {
         font-size: 5rem;
+    }
+
+    .all-package {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
+
     /* reducing the base font size */
-    html{
+    html {
         font-size: 60%;
     }
 
@@ -585,7 +751,7 @@ header .icons #menu-bars {
     } */
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
     header .icons #menu-bars {
         display: inline-block;
@@ -622,7 +788,7 @@ header .icons #menu-bars {
     /* .header .menu{
         display: inline-block;
     } */
-/* 
+    /* 
     .header .navbar{
         position: fixed;
         top: 6.4rem;
@@ -645,17 +811,29 @@ header .icons #menu-bars {
     }
  */
 
+    .all-package {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .package .all-package {
+        display: block;
+    }
+
+
     /* using clip-path here to make the navbar disappear and later on in JavaScript I make it reappear when the menu-bar div id is clicked */
 
-    .contact .box-container{
+    .contact .box-container {
         display: block;
     }
 
 }
 
 
-@media (max-width: 450px){
-    html{
+@media (max-width: 450px) {
+    html {
         font-size: 55%;
     }
 
@@ -667,7 +845,25 @@ header .icons #menu-bars {
         color: var(--black);
 
     }
+
+    .all-package {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .more-packages {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+
+    .more-packages a {
+        width: 50%;
+        align-items: center;
+    }
+
 }
 
 /* Website Responsiveness ends */
-
